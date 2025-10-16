@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center; /* para deixar o texto centralizado */
+    align-items: center; /* para deixar o texto no centro da tela */
+    background: linear-gradient(to right, #00b09b, #96c93d);
+}
+
+.calculadora {
+    background: #ffffff94;
+    padding: 18px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgb(0, 0, 0);
+    width: 260px;
+}
+
+
+#display {
+    background: rgba(255, 255, 255, 0.514);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: right;
+    font-size: 35px;
+    margin-bottom: 13px;
+    min-height: 50px;
+    overflow-x: auto;
+}
+
+.botões {
+    display: grid; /* para deixar o texto como uma grilia */
+    grid-template-columns: repeat(4, 1fr); /* tipo de grilia */
+    gap: 8px;
+}
+
+button {
+    padding: 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+button.num {
+    background-color: rgba(255, 255, 255, 0.575);
+}
+
+button.op {
+    background-color: #11748d86;
+}
+
+button.limpar {
+    background-color: rgba(255, 0, 0, 0.637);
+    color: white;
+}
+
+button.igual {
+    background: #ffc219d8;
+    color: white;
+}
+
+button:hover {
+    transform: scale(1.05); /* para deixar o texto maior quando passar o mause em cima */
+}
+
+
+footer {
+    position: fixed;
+    /* fica fixo na tela */
+    bottom: 10px;
+    /* distância da borda inferior */
+    left: 50%;
+    /* centraliza horizontalmente */
+    transform: translateX(-50%);
+    color: white;
+    /* deixa visível no fundo escuro */
+    font-size: 12px;
+    font-weight: 400;
+}
